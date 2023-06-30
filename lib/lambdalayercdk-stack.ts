@@ -24,6 +24,7 @@ export class LambdalayercdkStack extends cdk.Stack {
       runtime: Runtime.PYTHON_3_9,
       code: AssetCode.fromAsset(lambdaParams.codePath),
       handler: "index.handler",
+      layers: [lambdaLayer],
     });
   }
 }
