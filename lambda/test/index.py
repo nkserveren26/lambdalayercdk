@@ -1,6 +1,6 @@
 import numpy
 
 def handler(event, context):
-    # ログを出力する
-    print("event:",event)
-    print("context:",context)
+    # 乱数を生成
+    print(numpy.random.rand())
+    
