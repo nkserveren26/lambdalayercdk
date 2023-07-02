@@ -31,6 +31,7 @@ export class LambdalayercdkStack extends Stack {
       functionName: lambdaParams.functionName,
       runtime: Runtime.PYTHON_3_9,
       code: AssetCode.fromAsset(lambdaParams.codePath),
+      role: lambdaRole,
       handler: "index.handler",
       layers: [lambdaLayer],
     });
