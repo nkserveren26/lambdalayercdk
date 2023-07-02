@@ -1,11 +1,11 @@
 import { PythonLayerVersion } from '@aws-cdk/aws-lambda-python-alpha';
-import * as cdk from 'aws-cdk-lib';
+import { Stack,StackProps } from 'aws-cdk-lib';
+
 import { AssetCode, Function, Runtime } from 'aws-cdk-lib/aws-lambda';
 import { Construct } from 'constructs';
-// import * as sqs from 'aws-cdk-lib/aws-sqs';
 
-export class LambdalayercdkStack extends cdk.Stack {
-  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
+export class LambdalayercdkStack extends Stack {
+  constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
     const lambdaParams = {
       functionName: "lambdaFunction",

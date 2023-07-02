@@ -25,10 +25,10 @@
   resolved "https://registry.yarnpkg.com/@aws-cdk/asset-node-proxy-agent-v5/-/asset-node-proxy-agent-v5-2.0.165.tgz#c169599d83beceea7e638082ef9833997f04c85d"
   integrity sha512-bsyLQD/vqXQcc9RDmlM1XqiFNO/yewgVFXmkMcQkndJbmE/jgYkzewwYGrBlfL725hGLQipXq19+jwWwdsXQqg==
 
-"@aws-cdk/aws-lambda-python-alpha@^2.86.0-alpha.0":
-  version "2.86.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-lambda-python-alpha/-/aws-lambda-python-alpha-2.86.0-alpha.0.tgz#d4b1bf7664b433eb4981662ffecb959c952ab0d3"
-  integrity sha512-ZdWZFpe/q+3CbhtgJ6HIynXx02U7EWE/3lv1977WX05WrI4RaY44oWk95iFMu3ZNH5+E9zqrY8/lOWf5jBMQAA==
+"@aws-cdk/aws-lambda-python-alpha@^2.83.1-alpha.0":
+  version "2.83.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-lambda-python-alpha/-/aws-lambda-python-alpha-2.83.1-alpha.0.tgz#89d794ba1220f5303ea79e25bcb0e9f6a82d708d"
+  integrity sha512-Dty5sVvyvjdy26q4lh+QugOwAfL0RtggEwbWlxZO6aX0DZKLAHWemeJmY1syu1gEkm/vNzquor9dX7U6wFq3fg==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.22.5":
   version "7.22.5"
