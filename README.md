@@ -30,8 +30,11 @@ def handler(event, context):
 ・lambdaディレクトリ  
 LambdaレイヤーとLambda関数のファイルを配置。
 - testフォルダ：Lambda関数を実行するコードを配置するフォルダ
-- layerフォルダ：Lambdaレイヤーのデプロイに必要なファイルを配置するフォルダ（requirements.txtを配置）
-
+- layerフォルダ：Lambdaレイヤーのデプロイに必要なファイルを配置するフォルダ（requirements.txtを配置）  
+requirements.txtにはnumpyを記載
+``` requirements.txt
+numpy
+```
 
 # 手順
 
@@ -44,25 +47,16 @@ $ cdk init --lang typescript
 今回記載する方法では、以下のライブラリを使います。
 　PythonLayerVersion
 
-このライブラリを使うために以下のパッケージをインストールします。
-バージョンは2.83.1-alpha.0を指定します。
+このライブラリを使うために以下のパッケージをインストールします。  
+バージョンは2.83.1-alpha.0を指定します。  
 （これ以降のバージョンではエラーが出てデプロイに失敗します）
 ``` sh
 $ yarn add @aws-cdk/aws-lambda-python-alpha@^2.83.1-alpha.0
 ```
 
-## 実装
-ここからはコーディングに入ります。
-まず、作業ディレクトリ直下にlambdaフォルダを作成し、
-lambdaフォルダ内にtestフォルダとlayerフォルダを作成します。
-　testフォルダ：Lambda関数を実行するコードを配置するフォルダ
-　layerフォルダ：Lambdaレイヤーのデプロイに必要なファイルを配置するフォルダ
+## 実装内容
+CDKのソースコードについて説明します。
 
-testディレクトリには上記に記載したLambda関数のファイルを配置します。
-layerフォルダにはrequirements.txtを作成し、このファイルに以下を記載します。
-``` requirements.txt
-numpy
-```
 
 
 libディレクトリにあるファイルにコードを追記していきます。
