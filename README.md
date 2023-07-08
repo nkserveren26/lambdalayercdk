@@ -3,13 +3,13 @@
 本リポジトリはLambdaレイヤーをCDKでデプロイするリポジトリです。
 
 # 前提
-以下がインストール済み
-　CDK（ver 2.67.0）
-　Docker Desktop
-　yarn
+以下がインストール済み  
+- CDK（ver 2.67.0）
+- Docker Desktop
+- yarn
 
-CDKの言語：TypeScript
-AWS CLI：デフォルトプロファイルが設定済み
+CDKの言語：TypeScript  
+AWS CLI：デフォルトプロファイルが設定済み  
 Docker DesktopはCDKでのデプロイを実行するときに使います。
 
 # 実装内容
@@ -27,10 +27,10 @@ def handler(event, context):
 
 # 各ディレクトリについて
 
-・lambdaディレクトリ
+・lambdaディレクトリ  
 LambdaレイヤーとLambda関数のファイルを配置。
-　testフォルダ：Lambda関数を実行するコードを配置するフォルダ
-　layerフォルダ：Lambdaレイヤーのデプロイに必要なファイルを配置するフォルダ（requirements.txtを配置）
+- testフォルダ：Lambda関数を実行するコードを配置するフォルダ
+- layerフォルダ：Lambdaレイヤーのデプロイに必要なファイルを配置するフォルダ（requirements.txtを配置）
 
 
 # 手順
