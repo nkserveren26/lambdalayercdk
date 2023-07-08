@@ -35,10 +35,10 @@ requirements.txtにはnumpyを記載
 ``` requirements.txt
 numpy
 ```
-・libディレクトリ
+・libディレクトリ  
 スタックが定義されたソースコードが配置されたディレクトリ
 
-・bin
+・binディレクトリ  
 CDKのデプロイ時に実行されるファイルが配置されたディレクトリ
 
 # 手順
@@ -112,8 +112,8 @@ const lambdaRole: Role = new Role(this, lambdaParams.lambdaRoleName, {
 ```
 
 lambdaLayerが、本記事のメインであるLambdaレイヤーです。
-PythonLayerVersionは、Pythonで動くLambdaレイヤーのクラスになります。
-　entryプロパティに、requirements.txtを配置したディレクトリのパスを記載します（パスは、作業ディレクトリを起点とする相対パス）。
+PythonLayerVersionは、Pythonで動くLambdaレイヤーのクラスになります。  
+entryプロパティに、requirements.txtを配置したディレクトリのパスを記載します（パスは、作業ディレクトリを起点とする相対パス）。
 ``` lambdalayercdk-stack.ts
 const lambdaLayer: PythonLayerVersion = new PythonLayerVersion(this, lambdaParams.layerName, {
       layerVersionName: lambdaParams.layerName,
@@ -122,8 +122,8 @@ const lambdaLayer: PythonLayerVersion = new PythonLayerVersion(this, lambdaParam
 });
 ```
 
-lambdafuncがLambda関数になります。
-layersプロパティに、↑で宣言したlambdaLayerを指定します。
+lambdafuncがLambda関数になります。  
+layersプロパティに、↑で宣言したlambdaLayerを指定します。  
 layersプロパティは型が配列なので、配列で指定します。
 ``` lambdalayercdk-stack.ts
 const lambdafunc: Function = new Function(this, lambdaParams.functionName, {
