@@ -13,9 +13,9 @@ AWS CLI：デフォルトプロファイルが設定済み
 Docker DesktopはCDKでのデプロイを実行するときに使います。
 
 # 実装内容
-Pythonで動くLambdaレイヤーと、レイヤーを使用するLambdaを実装します。
-Lambdaのソースコードは以下です。
-numpyライブラリのモジュールを使って、ランダムに乱数を生成するだけのシンプルな内容です。
+Pythonで動くLambdaレイヤーと、レイヤーを使用するLambdaを実装します。  
+Lambdaのソースコードは以下です。  
+numpyライブラリのモジュールを使って、ランダムに乱数を生成するだけのシンプルな内容です。  
 Lambdaレイヤーには、numpyライブラリを含めて実装します。
 ``` index.py
 import numpy
@@ -35,6 +35,11 @@ requirements.txtにはnumpyを記載
 ``` requirements.txt
 numpy
 ```
+・libディレクトリ
+スタックが定義されたソースコードが配置されたディレクトリ
+
+・bin
+CDKのデプロイ時に実行されるファイルが配置されたディレクトリ
 
 # 手順
 
@@ -57,9 +62,6 @@ $ yarn add @aws-cdk/aws-lambda-python-alpha@^2.83.1-alpha.0
 ## 実装内容
 CDKのソースコードについて説明します。
 
-
-
-libディレクトリにあるファイルにコードを追記していきます。
 以下は、Lambdaレイヤーとレイヤーを利用するLambdaを実装するCDKスタックのコードです。
 ``` lambdalayercdk-stack.ts
 import { AssetCode, Function, Runtime } from 'aws-cdk-lib/aws-lambda';
