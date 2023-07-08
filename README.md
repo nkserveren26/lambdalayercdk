@@ -49,7 +49,7 @@ CDKのデプロイ時に実行されるファイルが配置されたディレ�
 $ cdk init --lang typescript
 ```
 
-今回記載する方法では、以下のライブラリを使います。
+今回記載する方法では、以下のライブラリを使います。  
 　PythonLayerVersion
 
 このライブラリを使うために以下のパッケージをインストールします。  
@@ -111,7 +111,7 @@ const lambdaRole: Role = new Role(this, lambdaParams.lambdaRoleName, {
 });
 ```
 
-lambdaLayerが、本記事のメインであるLambdaレイヤーです。
+lambdaLayerが、本記事のメインであるLambdaレイヤーです。  
 PythonLayerVersionは、Pythonで動くLambdaレイヤーのクラスになります。  
 entryプロパティに、requirements.txtを配置したディレクトリのパスを記載します（パスは、作業ディレクトリを起点とする相対パス）。
 ``` lambdalayercdk-stack.ts
@@ -137,7 +137,6 @@ const lambdafunc: Function = new Function(this, lambdaParams.functionName, {
 ```
 
 ## デプロイ
-コードが実装出来たらデプロイします。
 カレントディレクトリを作業ディレクトリにした状態で以下のコマンドを実行します。
 ``` sh
 $ cdk deploy
@@ -200,3 +199,6 @@ docker logout public.ecr.aws
 デプロイしたLambdaがちゃんと動くか確認します。
 Lambdaのコンソールに移動し、テストを実行します。
 （テスト設定はすべてデフォルトで問題ないです）
+
+以下のように、乱数が出力されていれば正常に動いています。
+
