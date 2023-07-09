@@ -107,7 +107,7 @@ lambdaRoleは、レイヤーを使うLambdaに付与するIAMロールです。
 const lambdaRole: Role = new Role(this, lambdaParams.lambdaRoleName, {
       roleName: lambdaParams.lambdaRoleName,
       assumedBy: new ServicePrincipal("lambda.amazonaws.com"),
-      managedPolicies: [ManagedPolicy.fromAwsManagedPolicyName("AWSLambdaBasicExecutionRole")]
+      managedPolicies: [ManagedPolicy.fromAwsManagedPolicyName("service-role/AWSLambdaBasicExecutionRole")]
 });
 ```
 
