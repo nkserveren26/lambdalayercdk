@@ -201,10 +201,26 @@ https://docs.aws.amazon.com/ja_jp/AmazonECR/latest/public/public-troubleshooting
 docker logout public.ecr.aws
 ```
 
-## Lambdaのテスト
-デプロイしたLambdaがちゃんと動くか確認します。
-Lambdaのコンソールに移動し、テストを実行します。  
-（テスト設定はすべてデフォルトで問題ないです）
+## Lambdaの確認
+Lambdaがデプロイできたか確認します。
+Lambdaのコンソールに移動し、デプロイしたLambdaの画面に移動します。
+下図のようにLayersが表示されます。
+![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2485934/d189941a-2365-e3cd-b6c1-cc9311ed0541.png)
 
-以下のように、乱数が出力されていれば正常に動いています。
+これをクリックすると、レイヤーに関する情報を確認できます。
+![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2485934/e0d80b9b-727a-e6bc-0d1a-c55f0bfc5260.png)
+
+
+デプロイしたLambdaがちゃんと動くかテストを実行して確認します。
+テスト設定はすべてデフォルトで実行します。
+![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2485934/85129fba-69d7-eba4-6851-22098459ca6f.png)
+
+
+以下のように、乱数が出力されていれば、正常にレイヤーのライブラリを使用できています。
+![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2485934/578f7480-6700-4a54-f312-4ba542f1c22f.png)
+
+
+# 参考資料
+
+https://www.ranthebuilder.cloud/post/build-aws-lambda-layers-with-aws-cdk
 
