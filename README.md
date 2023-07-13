@@ -199,15 +199,15 @@ docker logout public.ecr.aws
 
 ## Lambdaの確認
 Lambdaがデプロイできたか確認します。  
-Lambdaのコンソールに移動し、デプロイしたLambdaの画面に移動します。
-下図のようにLayersが表示されます。
+Lambdaのコンソールに移動し、デプロイしたLambdaの画面に移動します  。
+下図のようにLayersが表示されます。  
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2485934/d189941a-2365-e3cd-b6c1-cc9311ed0541.png)
 
 これをクリックすると、レイヤーに関する情報を確認できます。  
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2485934/e0d80b9b-727a-e6bc-0d1a-c55f0bfc5260.png)
 
 
-デプロイしたLambdaがちゃんと動くかテストを実行して確認します。
+デプロイしたLambdaがちゃんと動くかテストを実行して確認します。  
 テスト設定はすべてデフォルトで実行します。  
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2485934/85129fba-69d7-eba4-6851-22098459ca6f.png)
 
