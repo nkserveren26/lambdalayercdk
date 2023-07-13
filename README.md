@@ -146,9 +146,6 @@ $ cdk deploy
 ✅  LambdalayercdkStack
 
 ✨  Deployment time: 50.91s
-
-Stack ARN:
-arn:aws:cloudformation:ap-northeast-1:819628840011:stack/LambdalayercdkStack/34195220-18a1-11ee-9416-0aac76c8c3c5
 ```
 
 デプロイ実行時、エラーが出て失敗するケースがいくつかあります。
