@@ -151,7 +151,7 @@ $ cdk deploy
 デプロイ実行時、エラーが出て失敗するケースがいくつかあります。
 以下に、ケース別トラブルシュートを記載します。
 
-トラブルシュート①
+トラブルシュート①  
 cdk deploy実行時、以下のエラーが出る場合
 Docker Desktopが起動していないことが原因です。Docker Desktopを起動しましょう。
 ```
@@ -170,7 +170,7 @@ Error: docker exited with status 1
 Subprocess exited with error 1
 ```
 
-トラブルシュート②
+トラブルシュート②  
 cdk deploy実行時、以下のエラーが出る場合
 ```
 failed to get console mode for stdin: The handle is invalid.
