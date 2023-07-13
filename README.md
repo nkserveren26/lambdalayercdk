@@ -106,7 +106,7 @@ const lambdaRole: Role = new Role(this, lambdaParams.lambdaRoleName, {
       roleName: lambdaParams.lambdaRoleName,
       assumedBy: new ServicePrincipal("lambda.amazonaws.com"),
       managedPolicies: [ManagedPolicy.fromAwsManagedPolicyName("service-role/AWSLambdaBasicExecutionRole")]
-});
+    });
 ```
 
 lambdaLayerが、本記事のメインであるLambdaレイヤーです。  
