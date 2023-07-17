@@ -112,7 +112,8 @@ const lambdaRole: Role = new Role(this, lambdaParams.lambdaRoleName, {
 lambdaLayerが、本記事のメインであるLambdaレイヤーです。  
 PythonLayerVersionは、Pythonで動くLambdaレイヤーのクラスになります。  
 （インストールしたaws-lambda-python-alphaライブラリに含まれます）  
-entryプロパティに、requirements.txtを配置したディレクトリのパスを記載します（パスは、作業ディレクトリを起点とする相対パス）。
+entryプロパティに、requirements.txtを配置したディレクトリのパスを記載します。  
+（パスは、作業ディレクトリを起点とする相対パス）
 ``` lambdalayercdk-stack.ts
 const lambdaLayer: PythonLayerVersion = new PythonLayerVersion(this, lambdaParams.layerName, {
       layerVersionName: lambdaParams.layerName,
