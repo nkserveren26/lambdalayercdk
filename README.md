@@ -149,12 +149,13 @@ $ cdk deploy
 ✨  Deployment time: 50.91s
 ```
 
-デプロイ実行時、エラーが出て失敗するケースがいくつかあります。
+デプロイ実行時、エラーが出て失敗するケースがいくつかあります。  
 以下に、ケース別トラブルシュートを記載します。
 
 トラブルシュート①  
-cdk deploy実行時、以下のエラーが出る場合
-Docker Desktopが起動していないことが原因です。Docker Desktopを起動しましょう。
+cdk deploy実行時、以下のエラーが出る場合  
+Docker Desktopが起動していないことが原因です。  
+Docker Desktopを起動しましょう。
 ```
 error during connect: This error may indicate that the docker daemon is not running.: Post "http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.24/build?buildargs=%7B%22IMAGE%22%3A%22public.ecr.aws%2Fsam%2Fbuild-python3.9%22%7D&cachefrom=%5B%5D&cgroupparent=&cpuperiod=0&cpuquota=0&cpusetcpus=&cpusetmems=&cpushares=0&dockerfile=Dockerfile&labels=%7B%7D&memory=0&memswap=0&networkmode=default&platform=linux%2Famd64&rm=1&shmsize=0&t=cdk-a3cf09e124d1012c8446b8fbc9d3fb0af39864821bd92922a198a755b57cf1b6&target=&ulimits=null&version=1": open //./pipe/docker_engine: The system cannot find the file specified.C:\data\cdk\lambdalayercdk\node_modules\aws-cdk-lib\core\lib\private\asset-staging.js:4
 stderr: ${proc.stderr?.toString().trim()}`):new Error(`${prog} exited with status ${proc.status}`);return proc}exports.dockerExec=dockerExec;
