@@ -190,7 +190,7 @@ failed to get console mode for stdin: The handle is invalid.
     
 Subprocess exited with error 1
 ```
-有効期限の切れた認証トークンが残ったままになっていて、それを使用してECRのパブリックレジストリにアクセスしたためにこのエラーが出ます。
+有効期限の切れた認証トークンが残ったままになっていて、それを使用してECRのパブリックレジストリにアクセスしたためにこのエラーが出ます。  
 このエラーは公式ドキュメントにも記載されてます。
 https://docs.aws.amazon.com/ja_jp/AmazonECR/latest/public/public-troubleshooting.html#public-troubleshooting-authentication
 
