@@ -99,7 +99,7 @@ export class LambdalayercdkStack extends Stack {
 }
 ```
 
-実装する各リソースを以下に解説します。
+実装する各リソースを以下に解説します。  
 lambdaRoleは、レイヤーを使うLambdaに付与するIAMロールです。
 ``` lambdalayercdk-stack.ts
 const lambdaRole: Role = new Role(this, lambdaParams.lambdaRoleName, {
